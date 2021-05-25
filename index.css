@@ -12,8 +12,9 @@ body{
     background-color:black;
     background-image: url('animated.gif');
     background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y:110%;
+    background-position-x: 57%;
+    background-position-y:50%;
+    margin-top:0;
    
 }
 
@@ -45,17 +46,21 @@ header{
     width:100px;
    border-color:white;
    color:white;
+   
 
     
 }
 .header-nav:hover{
     background-color:rgb(100, 182, 100);
 }
-.content-area{
+.content-area2{
     color:white;
     font-size: 100px;
     font-family:monospace;
-    line-height:300px;
+    line-height:500px;
+    height:600px;
+  
+    
     
 
 }
@@ -71,6 +76,20 @@ header{
     border-radius:80px;
 } */
 
-.content-area2{
-    margin-top: 1000px;
+.blink_me {
+    animation: blinker 2s linear infinite;
+  }
+  
+  .blink_me{ @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 }
+
+  .nature{
+      background-image:url('nature.jpg');
+      background-size: cover;
+      width:100%;
+      height:700px;
+  } 
