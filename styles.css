@@ -749,7 +749,6 @@ body {
 #turn4:checked ~ [name=cb-player4]:checked + label + input + label + input + label + input + label + input + label + input + label + input + label {
   animation-delay: -0.5s !important;
 }
-
 #turn1:checked ~ [name=cb-player1]:checked + label + input + label::before {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='8' /></svg>");
 }
