@@ -896,6 +896,9 @@ label.dice:active::before {
   text-transform: uppercase;
   font-size: 0.95rem;
 }
+#game .tab:hover{
+  background-color:tomato;
+}
 #game .tab::after, #game .tab#player-info span {
   display: block;
   text-align: center;
