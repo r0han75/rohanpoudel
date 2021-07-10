@@ -954,7 +954,7 @@ label.dice:active::before {
   left:330px;
   height:100px;
   font-size: 35px;
-  background-color: rgb(245, 147, 130);
+  
 }
 #game .tab#action::before {
   content: "";
