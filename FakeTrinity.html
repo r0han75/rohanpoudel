@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Trinity International College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+    .header1{
+      height:250px;
+      width: 100%;
+      background-color: darkorange;
+      background-image: url('header1.png');
+      background-size: cover;
+    }
+    .admission{
+      height: 600px;
+      width:450px;
+      background-image: url('popup.png');
+      position: relative;
+      background-size: cover;
+      z-index: -1;
+      margin-top: 150px;
+    }
+    .container{
+      height: 500px;
+      width: 100%;
+    }
+
+    .apply{
+      position: absolute;
+      margin-top: 100px;
+      font-family: 'Mulish', sans-serif;
+      font-size: 90px;
+      font-weight:bolder;
+      color: darkgoldenrod;
+      margin-left: 270px;
+      animation: blink 2s infinite;
+      z-index: 999;
+      position: absolute;
+
+    }
+    @keyframes blink{
+      0%{opacity: 1;}
+      50%{opacity: 0;}
+      100%{opacity: 1;}
+    }
+    * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  margin-top:-550px;
+  margin-left:500px;
+
+}
+#content1img{
+  position: absolute;
+  height: 430px;
+  width:45%;
+  margin-top:70px;
+  border-radius: 100px;
+  }
+
+
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  visibility: hidden;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.content1{
+height: 620px;
+width: 100%;
+background-image: url("background.png");
+background-size: cover;
+color: white;
+z-index: 9999;
+  }
+  .content1:hover{
+    background-image: url("backgroundrev.png");
+  }
+  .text{
+    width: 50%;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 50%; 
+    margin-top: 20px; 
+    position: absolute;
+  }
+ .content1:hover{
+
+ }
+ .intro{
+  
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+  font-size: 18px;
+  font-family:arial;
+  position: absolute;
+ z-index: 99999;
+ 
+ }
+ #marquee{
+  height: 30px;
+  width: 50%;
+
+
+ }
+ .navbar{
+  height: 100px;
+  width: 100%;
+ 
+
+ 
+ background: rgb(34,193,195);
+background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+ }
+ .main-content1{
+  margin-top: 20px;
+  height: 900px;
+  width: 100%;
+  background: url('background2.png');
+  background-size: cover;
+
+  
+}
+
+
+  </style>
+ 
+<div class="intro">
+  <marquee width="100%" direction="right" height="30px" onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="12">
+  <img src="placeholder.svg" style="height:25px;width:20px;margin-left:150px"> 
+  Dillibazar Height, Kathmandu, Nepal &nbsp;&nbsp;||<img src="gmail.png" style="height:25px;width:30px;margin-left:20px">&nbsp;&nbsp;info@trinitycollege.edu.np&nbsp;||<img src="phone.png" style="height:25px;width:25px;margin-left:20px;margin-top:1px" >+977 4445955/4445956 <img src="facebook.png" style="height:25px;width:25px;margin-left:20px;margin-top:1px" ><img src="youtube.png" style="height:30px;width:30px;margin-left:10px;margin-top:1px" >
+</marquee>
+</div>
+
+<div class="navbar" style="font-size: 22px;font-family: 'Varela Round', sans-serif;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  href="#" style="background-color:transparent;margin-top: 20px;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  href="#" style="background-color:transparent;margin-top: 20px;">Admission Info</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="margin-top: 20px;color:black;" data-bs-toggle="dropdown" aria-expanded="false">
+            Academic Programs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">+2 Neb</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">GCE A LEVELS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">BBS(TU)</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">BA/BASW(TU)</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">BBM(TU)</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">BSc CSIT(TU)</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="margin-top: 20px;color:black;" data-bs-toggle="dropdown" aria-expanded="false">
+            Trinity People
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">TRINITY advisory board</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">TRINITY team</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Teaching Faculty</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">STAFF</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="margin-top: 20px;color:black;" data-bs-toggle="dropdown" aria-expanded="false">
+            Students View
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Students Voice</a></li>
+             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Students View</a></li>
+            
+            
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="margin-top:20px;">
+        <button class="btn btn-outline-success" type="submit" style="margin-top:20px;">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  </div>
+<div class="header1">
+  <form class="row g-3"style="margin-left:860px;margin-top:8px;position:absolute;">
+  <div class="col-auto">
+    <label for="staticEmail2" class="visually-hidden">Email</label>
+    
+    <input type="text" class="form-control" id="inputemail" placeholder="@trinity.edu.np">
+    
+  </div>
+
+  <div class="col-auto" >
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+  </div>
+  <div class="col-auto" style="margin-left:250px">
+    <button type="submit" class="btn btn-success mb-3">Login</button>
+    <button type="submit" class="btn btn-success mb-3">Forgot password</button>
+  </div>
+</form>
+  <p class="apply">APPLY NOW!!</p>
+<div id="marquee">
+
+</div>
+<div class="admission">
+
+  <!-- <p class="apply">APPLY NOW!!</p> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+   <img src="img1.jfif" style="width:100%;border-top-right-radius: 250px;
+">
+ </div>
+
+<div class="mySlides fade">
+  <img src="img2.jfif" style="width:100%;border-top-right-radius: 250px;
+">
+  </div>
+
+<div class="mySlides fade">
+  <img src="img3.jfif" style="width:100%;border-top-right-radius: 250px;
+">
+ </div>
+
+<div class="mySlides fade">
+  <img src="img5.jfif" style="width:100%;border-top-right-radius: 250px;
+">
+  </div>
+<div class="mySlides fade">
+   <img src="img6.jfif" style="width:100%;border-top-right-radius: 250px;
+">
+  </div>
+<div class="mySlides fade">
+  <img src="img7.jfif" style="width:100%;border-top-right-radius: 250px;
+">
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+  </div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1600); 
+}
+</script>
+
+<div class="content1">
+<img src="content1.jfif" id="content1img">
+
+  <div class="text">
+
+Today, Trinity International College is the leading college in Nepal for +2 and A Levels. The College offers qualitative +2 programmes and Cambridge International A Levels at the higher secondary stage. It also runs programmes at the graduate and post-graduate levels - Tribhuvan University BSc CSIT, BBS, and BA as well as MA (English).
+
+We provide the best available higher learning and all-round opportunities to all our students, invariably the best in the country, as they aspire to realize their personal talents and to expand their scholastic abilities. Our organization concentrates, first and foremost, upon academics supplemented with extracurricular and co-curricular activities. It also places great emphasis on personal development and individual counseling linked to course studies.
+</div>
+</div>
+<style>
+.box1{
+  height: 400px;
+  width: 400px;
+  border: solid;
+  margin-left: 0px;
+  border-color: white;
+  border-radius: 150px;
+  background-color: #0f1c70;
+}
+.box2{
+  height: 700px;
+  width: 400px;
+  border: solid;
+  margin-left: 520px;
+   border-color: white;
+   margin-top: -300px;
+   border-radius: 150px;
+   background-color: #0f1c70;
+  }
+  .box3{
+  height: 400px;
+  width: 400px;
+  border: solid;
+  margin-left: 1000px;
+  margin-top: -500px;
+    border-radius: 150px;
+   border-color: white;
+   background-color: #0f1c70;
+ }
+.box1h{
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+color: white;
+padding: 10px;
+font-size: 80px;
+}
+.box1p{
+ 
+  font-family: 'Montserrat', sans-serif;
+color: white;
+padding: 10px;
+font-size: 20px;
+}
+
+.box1p:hover{
+  font-size: 40px;
+  line-height: 50px;
+  
+  
+}
+.box1:hover{
+  height:620px;
+
+}
+.box2h{
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+color: white;
+padding: 10px;
+font-size: 80px;
+}
+.box2p{
+ 
+  font-family: 'Montserrat', sans-serif;
+color: white;
+padding: 10px;
+font-size: 20px;
+}
+.box2p:hover{
+ font-size: 22px;
+}
+.box2:hover{
+  height:790px;
+}
+
+.box3h{
+  margin-left: 40px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+color: white;
+padding: 10px;
+font-size: 80px;
+}
+.box3p{
+ 
+  font-family: 'Montserrat', sans-serif;
+color: white;
+padding: 10px;
+font-size: 20px;
+margin-left: 120px;
+
+}
+.box3:hover{
+  height: 500px;
+}
+
+.box3p:hover{
+  font-size: 25px;
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-content1">
+  <div class="box1">
+    <h1 class="box1h">
+      VISION
+    </h1>
+    <p class="box1p">
+    To be a leading college for academic excellence  that  will  be  the  first choice of students in Nepal</p>
+    </div>
+<div class="box2">
+  <h1 class="box2h">
+    MISSION
+  </h1>
+  <p class="box2p">
+    Trinity strives to provide qualitative education for the intellectual, social, and personal transformation of students. We endeavour to be a supportive platform that nurtures their talents and abilities for the future.
+The College is committed to deliver teaching & learning of the highest standards that is modern, pragmatic, and effective. We seek to offer a competitive environment with new ways of understanding, active engagement, and continuous encouragement for student success.</p>
+    </div>
+  </div>
+  <div class="box3">
+    <h1 class="box3h">Values</h1>
+   <p class="box3p">
+    Respect<br>
+    Care<br>
+    Honesty<br>
+    Responsibility<br>
+    Fairness<br>
+    Effort<br>
+    Teamwork
+</p> </div>
+
+
+
+</div>
+  <style>
+  .class-content{
+    height: 300px;
+    width: 100%;
+   
+    margin-top: 2100px;
+
+  }
+
+  .last-content{
+    width: 100%;
+    height: 800px;
+    margin-top: 200px;
+    background-image: url('background3.png');
+    background-size: cover;
+    
+  }
+</style>
+ 
+ <div class="class-content" >
+<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1230&amp;height=500&amp;hl=en&amp;q=Trinity International College&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedgooglemap.xyz/">embed google map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:500px;}.gmap_iframe {height:500px!important;}</style></div>
+ </div>
+  
+  <div class="last-content">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b20000" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,240C672,245,768,235,864,197.3C960,160,1056,96,1152,106.7C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  </div>
+  
+<div class="card" style="width: 18rem;margin-top:-520px">
+  <img src="library.jfif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Our library has a large merely updated collection of internationally standardized textbooks, reference books,  pleasure reading books, research and project reports, audio-visual materials, and gadgetry, and online access to international library networks. We regularly subscribe to select journals, magazines, and newspapers.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top:-550px;margin-left:380px">
+  <img src="sciencelab.jfif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">To promote practical learning, there are three separate well-maintained, spacious, hygienic, and well-equipped Physics, Chemistry, and Biology laboratories with modern apparatus and ample, varied specimens. Our technical staff provides close support to students to transform their learning into useful practical knowledge.</p>
+  </div>
+</div>
+  
+  <div class="card" style="width: 18rem;margin-top:-400px;margin-left:730px">
+  <img src="ict.jfif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">The College has a totally digitally networked working environment with a centrally locatedICT(InformationCommunication Technology) Center with uninterrupted broadband
+internet connectivity. The Center particularly helps students to improve their computer skills
+and assists in e-learning. Lab supervisors monitor and support each student in computing.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top:-750px;margin-left:1080px">
+  
+  <div class="card-body">
+    <p class="card-text">Our Recreational Facilities – sports and games – inside the College premises include well-maintained basketball courts, cricket nets, table tennis courts, and indoor game places.The College promotes physical and mental fitness through its Recreational Facilities. Apart from regular games and sports, or matches and tournaments, we organize excursions and appropriate outdoor activities for our students.</p>
+  </div>
+</div>
+<style>
+.footer{
+  background-color: black;
+  height: 600px;
+  width: 100%;
+  margin-top: 200px;
+}
+
+</style>
+
+<div class="footer">
+  <div class="mb-3" style="margin-top:150px;position:absolute;color:#b20000;font-size:20px;">
+  <label for="exampleFormControlInput1" class="form-label" >Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3"style="margin-top:230px;position:absolute;color:#b20000;font-size:20px;" >
+  <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <button type="button" class="btn btn-success" style="margin-top: 5px;">Submit</button>
+</div>
+<div class="site" style="margin-top:280px;position: absolute;margin-left:500px;color:white;">
+  Official Site:<a href ="https://www.trinitycollege.edu.np/">https://www.trinitycollege.edu.np</a>
+</div>
+<div class="site" style="margin-top:250px;position: absolute;margin-left:500px;color:white;">
+  DESIGNED BY ROHAN!
+</div>
+<div class="site" style="margin-top:320px;position: absolute;margin-left:500px;color:white;font-family: cursive;font-size: 50px;">
+  PROJECT ON HTML & CSS 
+</div>
+
+</div>
+</body>
+</html>
