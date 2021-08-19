@@ -1385,7 +1385,14 @@
             <!-- Click sound by Sebastian. Source: http://soundbible.com/1705-Click2.html-->
             <embed src="https://studiokah.com/tests/click2.mp3"/>
         </div>
-
+<script>
+    var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+    </script>
     </body>
 
 </html>
