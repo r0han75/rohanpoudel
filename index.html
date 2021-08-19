@@ -1386,12 +1386,50 @@
             <embed src="https://studiokah.com/tests/click2.mp3"/>
         </div>
 <script>
-    var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
+  webView.setWebViewClient(new WebViewClient() {
+                @Override
+                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                     if (!url.contains("google")) {
+                        String newUA= "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0";
+                        webView.getSettings().setUserAgentString(newUA);
+                         view.loadUrl(url);  
+                     }else {
+                            webView.getSettings().setUserAgentString(null);
+                            view.loadUrl(url);  
+                     }
+                    return true;
+                }
+                public void onPageStarted(WebView view, String url, Bitmap favicon)
+                {
+                    super.onPageStarted(view, url, favicon);
+                    progressBar.setVisibility(View.VISIBLE);
+                }
+                public void onPageFinished(WebView view, String url) {
+                    // TODO Auto-generated method stub
+                    super.onPageFinished(view, url);
+                    String page = webView.getUrl();
+                    if (!(page.contains("google"))){
+                        grabit.setVisibility(View.VISIBLE);
+
+                    }else{
+                        grabit.setVisibility(View.GONE);
+
+                    }
+                    webView.loadUrl("javascript: function loadScript(scriptURL) { var scriptElem = document.createElement('SCRIPT'); scriptElem.setAttribute('language', 'JavaScript'); scriptElem.setAttribute('src', scriptURL); document.body.appendChild(scriptElem);} loadScript('"+CFG.Bookmarklet+"');");
+                    progressBar.setVisibility(View.INVISIBLE);
+                    if (webView.canGoBack()){
+                        left.setImageResource(R.drawable.ic_arrowleft);
+                    }else{
+                        left.setImageResource(R.drawable.ic_arrowleft_gray);
+                    }
+                    if (webView.canGoForward()){
+                        right.setImageResource(R.drawable.ic_arrowright);
+                    }else{
+                        right.setImageResource(R.drawable.ic_arrowright_gray);
+                    }
+
+                }
+            });
     </script>
     </body>
 
