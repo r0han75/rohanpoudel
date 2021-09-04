@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar{
+    height:150px;
+    width:70%;
+    background-color: salmon;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    margin-top:20px;
+   position: relative;
+    z-index:123456;
+}
+.main1 {
+  height: 100vh;
+  width: 100%;
+
+  
+  background:linear-gradient(to top right,white,rgb(163, 68, 68));
+}
+.circle{
+    height:250px;
+    width:250px;
+    border-radius: 52% 0% 0% 100% / 0% 0% 100% 100% ;
+    background-color: rgb(88, 81, 81);
+    position: absolute;
+    left:0px;
+    transform: rotate(270deg);
+}
+
+.right1{
+    height:127vh;
+    position: relative;
+    width: 680px;
+   
+    left:585px;
+    top:-278px;
+  
+    background-image: url('front.jpg');
+    background-size: cover;
+    filter: contrast(1);
+    z-index:1234;
+/*     
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+                 z-index: 3; */
+}
+
+.left{
+    position:absolute;
+    height:180px;
+    width:40%;
+    top:200px;
+    border-radius: 36px;
+left:70px;
+
+    background-image: linear-gradient(
+        to right top,
+        #cf8c3d,
+        #d4a12b,
+        #d0b815,
+        #c2d100,
+        #a8eb12
+      );
+box-shadow:  -32px 32px 63px #7a4646,
+             32px -32px 63px #ffd1d1;
+    animation: updown 10s infinite;
+            }
+ @keyframes updown{
+    0%{top:200px;}
+    
+    50%{top:180px;
+    }
+    
+    100%{top:200px;}
+    
+} 
+.left{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+    font-family: 'Fredoka One', cursive;
+}
+.left p{
+    position: absolute;
+    top:50px;
+    font-size:50px;
+    font-weight: lighter;
+    color:brown;
+
+}
+.water-drop1,.water-drop2,.water-drop3{
+    height:150px;
+    width:150px;
+    border-radius: 63% 30% 33% 65% / 37% 65% 33% 52% ;
+    background-color: white;
+    font-family: 'Fredoka One', cursive;
+    padding-left:20px;
+    font-size: 35px;
+background: linear-gradient(145deg, #ffffff, #7a7a7a);
+box-shadow:  100px 100px 180px #666666,
+             -210px -210px 180px #bbb8b8;
+             position: absolute;
+             top:450px;
+             opacity: 0.6;
+             display: flex;
+             justify-items: center;
+             align-items: center;
+    animation:rotate 10s infinite;
+    animation-delay: 0ms;
+
+            }
+            @keyframes rotate{
+                0%{
+                    transform: rotate(0%);
+                   
+                }
+                /* 12.5%{ transform: rotate(45deg)}
+                25%{
+                    transform: rotate(90deg);
+                }
+                50%{
+                    transform: rotate(180deg);
+                }
+                75%{
+                    transform: rotate(270deg);
+                } */
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+.water-drop1:hover,.water-drop2:hover,.water-drop3:hover{
+
+    height:200px;
+    width:200px;
+    left:20px;
+    display: flex;
+   
+    justify-content: center;
+}
+.water-drop2{
+    margin-left:200px;
+    color:brown;
+    margin-top:80px;
+}
+.water-drop3{
+    margin-left:400px;
+    padding-left:15px;
+    
+}
+.water-drop1{
+    margin-left:0px;
+    
+}
+
+.internal{
+    animation:rotate1 15s infinite;
+    
+}
+@keyframes rotate1{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(-180deg);}
+    100%{transform: rotate(360deg);}
+}
+
+section{
+    
+    
+    scroll-snap-align: start;
+ 
+    
+    
+}
+
+
+.m1{
+    height: 100vh;
+    width: 100%;
+    background-color: lawngreen;
+    background-image: url(ktm.jpg);
+    background-size: cover;
+    z-index:100;
+    z-index: 99999999;
+}
+.m2{
+    height: 100vh;
+    width: 100%;
+    background-color:cyan;
+    background-image: url(cycle.jpg);
+    background-size: cover;
+    z-index: 99999999;
+}
+.m3{
+    height: 100vh;
+    width: 100%;
+    background-color: gold;
+    background-image: url(mountain.jpg);
+    background-size: cover;
+    z-index: 99999999;
+}
+.scroll-lock{
+scroll-snap-type: y mandatory;
+height: 100vh;
+overflow-y: scroll;
+
+
+}
+.scroll-lock::-webkit-scrollbar {
+    width:15px;
+    background-color: tomato;
+  }
+ .scroll-lock::-webkit-scrollbar-track{
+     border-radius: 30px;
+ }
+  .scroll-lock::-webkit-scrollbar-thumb {
+    background-color: rgb(8, 0, 0);
+   
+    border-radius: 30px;
+   
+  }
+  body::-webkit-scrollbar {
+    width:15px;
+    background-color: gray;
+  }
+ body::-webkit-scrollbar-track{
+     border-radius: 30px;
+ }
+ body::-webkit-scrollbar-thumb {
+    background-color: white;
+   
+    border-radius: 30px;
+   
+  }
+  .con1{
+     
+      background-color: #763c46;
+      height:78vh;
+      width:35%;
+      left:60%;
+      top:90px;
+      position: relative;
+      opacity: 0.8;
+      border-bottom-right-radius: 60px;
+      display: flex;
+      justify-content: center;
+     
+      font-family: 'Fredoka One', cursive;
+      
+
+  }
+ 
+  
+  .content-box{
+    background-image: linear-gradient(to right top,rgb(2, 47, 73),rgb(104, 120, 131)); 
+   height:500px;
+   width:700px;
+   display: flex;
+   margin:auto;
+   position:relative;
+   box-shadow:black;
+   top:10vh;
+   border-radius:70px;
+ z-index:5;
+ opacity: 0.8;
+}
+ .circle2, .circle4{
+   height:200px;
+   width:200px;
+   background-color: salmon;
+   z-index:4;
+  position: relative;
+   border-radius: 50%;
+   z-index: 2;
+  
+  
+} 
+
+ .circle2{
+   top:-60px;
+   left:180px;
+   animation:movement1 25s infinite;
+}
+
+ @keyframes movement1{
+   0%{top:-60px;
+       left:180px;}
+       25%{
+           top:-60px;
+       left:870px;
+       }
+       50%{
+           top:-500px;
+           left:870px;
+       }
+       75%{
+           top:-500px;
+           left:180px;
+       }
+       100%{top:-100px;
+           left:180px;}
+   } 
+
+
+.circle4{
+   left:870px;
+   top:-720px;
+   animation:movement2 25s infinite;
+}
+
+ @keyframes movement2{
+   0%{left:870px;
+       top:-720px;}
+       25%{
+        top:-720px;
+           left:180px;
+       }
+       50%{
+           top:-250px;
+           left:180px;
+       }
+       75%{
+           top:-250px;
+           left:870px;
+       }
+       100%{left:870px;
+        top:-720px;
+        }
+   }  
+.left-content{
+   background-color:seashell;
+   width:25%;
+   float: left;
+   border-radius:30px;
+   border-top-right-radius:0px ;
+  border-bottom-right-radius: 0px;
+  display: flex;
+  align-items: center;
+  
+}
+.about-us{
+    margin-left:70px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 40px;
+    
+}
+
+  
+  
+  
+
+.login{
+	position: relative;
+	width: 350px;
+	height: 500px;
+	background-color: wheat;
+	left:840px;
+	top: -450px;
+	border-radius: 93px;
+background: #327be9;
+box-shadow: inset 50px -50px 47px #1b417b,
+            inset -50px 50px 47px #4ab5ff;
+            font-family: 'Varela Round', sans-serif;
+            color: whitesmoke;
+            font-size: 30px;
+            text-align: center;
+        }
+        .login h1{
+        	position: relative;
+        	top: 80px;
+        }
+        .login-box{
+        	position: relative;
+        	top: 120px;
+        	text-align: center;
+        	font-family: 'M PLUS Rounded 1c', sans-serif;
+        	font-weight: 500;
+
+        }
+        input.username,.password  {
+    height: 33px;
+    width: 306px;
+    border-radius: 70px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+  
+}
+  .content{
+  	width: 740px;
+  	height: 526px;
+  	background-color: pink;
+  	position: relative;
+  	top: 40px;
+  	left: 40px;
+  	background-image: url('code.png');
+  	border-radius: 50px;
+      opacity: 0.9;
+  }
+
+
+  .submit{
+ width: 100px;
+    border-radius: 55px;
+    outline: none;
+    height: 50px;
+    border: none;
+    background-color: turquoise;
+    font-size: 35px;
+    margin-top: 42px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bolder;
+
+  }
+
+
+  .content .txt {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  /*opacity: 0.5;*/
+
+
+ /* background: rgba(0, 0, 0, 0.5); */
+  color: #f1f1f1;
+  width: 700px;
+  padding: 20px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius:50px ;
+  text-align: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 40px;
+}
+/* 
+input.username:focus,.password:focus{
+  width: 324px;
+  font-size: 20px;
+} */
+.column{
+    float: left;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    border-radius: 100%;
+    margin-left: 30px;
+   top:100px;
+    display: block;
+   /* transform: rotate(45deg);*/
+   
+    background-color: white;
+  
+  
+  }
+  .home,.contact,.projects{
+      margin-left:70px;
+      position: relative;
+      top:50px;
+      padding:15px;
+      height:70px;
+      width:220px;
+      border-radius: 50px;
+      outline: none;
+      border: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+
+  }
+  .home:hover,.contact:hover,.projects:hover{
+    background-color: rgb(13, 231, 13);
+  }
+  #team{
+      margin:auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 150px;
+     color:white;
+     position: relative;
+     top:50px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* .box1{
+      height:400px;
+      width:400px;
+      background-color: black;
+      position: relative;
+      margin:auto;
+  } */
+  .second-content{
+      height:100vh;
+      width:100%;
+      background: rgb(34,193,195);
+background: -moz-linear-gradient(60deg, rgba(34,193,195,1) 0%, rgba(214,185,123,1) 100%);
+background: -webkit-linear-gradient(60deg, rgba(34,193,195,1) 0%, rgba(214,185,123,1) 100%);
+background: linear-gradient(60deg, rgba(34,193,195,1) 0%, rgba(214,185,123,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#d6b97b",GradientType=1);
+  }
