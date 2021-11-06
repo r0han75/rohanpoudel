@@ -1,0 +1,27 @@
+@media only screen and (min-width:500px) {
+    .home {
+        background-color: palegoldenrod;
+        display: flex;
+        flex-flow: row;
+        width: 100vw;
+        background-image: none;
+    }
+    .home>div {
+        width: 50vw;
+    }
+    * {
+        overflow-x: hidden;
+    }
+    .cont--1 {
+        background-color: #e36a5d;
+    }
+    .cont--2 {
+        background-color: #faaf40;
+    }
+    .cont--3 {
+        background-color: #6fbdc4;
+    }
+    .cont--4 {
+        background-color: #204288;
+    }
+}
